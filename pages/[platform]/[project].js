@@ -1,4 +1,4 @@
-import React from 'react'
+import { useEffect } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
@@ -8,11 +8,31 @@ import { dbProjects } from '../../utilities/dbProjects'
 
 export default function Project() {
 
-   const router = useRouter()
+  const router = useRouter()
   const {project, platform} = router.query
   
 const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
 var htmlContent = { __html: found?.description };
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      if ( url !== '/' ) {
+        window.history.pushState({}, null, '/');
+        // window.location.reload();
+        router.replace('/')
+        window.scrollTo({ top: 0 });
+
+
+      }
+    };
+
+    window.addEventListener('popstate', handleRouteChange);
+
+    return () => {
+      window.removeEventListener('popstate', handleRouteChange);
+    };
+  }, []);
+
 
   return (
     <>

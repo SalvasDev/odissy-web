@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import React, {useContext, useEffect, useState} from 'react'
 import IndexContext from '../context/IndexContext'
 

@@ -1,14 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import Link from 'next/link'
 import Image from 'next/image'
 import logo from '../assets/img/logo-odissy.svg'
 import lightMode from '../assets/img/light-mode.svg'
 import darkMode from '../assets/img/dark-mode.svg'
-import { isUsingDarkMode } from '../helpers/isUsingDarkMode'
-import { setColorSchemeToLS } from '../helpers/setColorSchemeToLS'
-import { getColorSchemeFromLS } from '../helpers/getColorSchemeFromLS'
-import { burgerBtn } from '../helpers/burgerBtn'
-import Link from 'next/link'
-import { positionAnchor } from '../helpers/positionAnchor'
+import { isUsingDarkMode, setColorSchemeToLS, getColorSchemeFromLS, burgerBtn, positionAnchor } from '../helpers'
 
 
 export default function Header() {
