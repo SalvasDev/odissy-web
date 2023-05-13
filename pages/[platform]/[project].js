@@ -1,9 +1,10 @@
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import Head from 'next/head'
 import BasicLayout from '../../layouts/BasicLayout/BasicLayout'
 import { dbProjects } from '../../utilities/dbProjects'
+import ButtonDetail from '../../components/buttonDetail'
 
 
 export default function Project() {
@@ -11,14 +12,15 @@ export default function Project() {
   const router = useRouter()
   const {project, platform} = router.query
   
-const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
-var htmlContent = { __html: found?.description };
+  const [showVerticalBtnDetail, setShowVerticalBtnDetail ] = useState(false)
+
+  const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
+  var htmlContent = { __html: found?.description };
 
   useEffect(() => {
     const handleRouteChange = (url) => {
       if ( url !== '/' ) {
         window.history.pushState({}, null, '/');
-        // window.location.reload();
         router.replace('/')
         window.scrollTo({ top: 0 });
 
@@ -32,7 +34,25 @@ var htmlContent = { __html: found?.description };
       window.removeEventListener('popstate', handleRouteChange);
     };
   }, []);
+useEffect(() => {
+      const handleScroll = () => {
+        const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const distanceInPercentage = (distanceFromTop / totalHeight) * 100;
 
+        if (distanceInPercentage >= 5 ) { // Cambia este valor para el porcentaje que desees
+        setShowVerticalBtnDetail(true)  
+        } else {
+          setShowVerticalBtnDetail(false)
+        }
+      };
+
+       window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <>
@@ -69,6 +89,9 @@ var htmlContent = { __html: found?.description };
           })
         }
       </section>
+      {
+        showVerticalBtnDetail && <ButtonDetail smart__class='vertical__arrowbtn-detail'/>
+      }      
     </div>        
     </BasicLayout>
     </>

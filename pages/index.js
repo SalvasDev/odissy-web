@@ -1,3 +1,5 @@
+import Head from 'next/head'
+import { useEffect, useState } from 'react'
 import BasicLayout from '../layouts/BasicLayout'
 import Hero from '../components/hero'
 import Socialbar from '../components/socialBar'
@@ -6,32 +8,40 @@ import { IndexContextProvider } from '../context/IndexContext'
 import Services from '../components/services'
 import Projects from '../components/projects'
 import Contact from '../components/contact'
-import { useEffect } from 'react'
 import About from '../components/about'
 import 'animate.css'
-import { useRouter } from 'next/router'
-import Head from 'next/head'
+import ButtonDetail from '../components/buttonDetail'
+import { positionAnchor } from '../helpers'
 
 
 export default function Home() { 
 
-const router = useRouter();
+const [showVerticalBtn, setShowVerticalBtn ] = useState(false)
 
-  useEffect(() => {
-    // Configurar scrollRestoration en manual solo en la página de inicio
-    if (router.pathname === '/*') {
-      if ('scrollRestoration' in window.history) {
-        window.history.scrollRestoration = 'manual';
-      }
-    }
+useEffect(() => {
 
-    // Limpiar la propiedad scrollRestoration en un efecto de limpieza cuando se desmonte el componente
+      //Posiciona el puntero en el topo de la página dejando su margen respectivo
+      positionAnchor()
+
+      const handleScroll = () => {
+        const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+        const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const distanceInPercentage = (distanceFromTop / totalHeight) * 100;
+
+        if (distanceInPercentage >= 5 ) { // Cambia este valor para el porcentaje que desees
+
+          setShowVerticalBtn(true)  
+        } else {
+          setShowVerticalBtn(false)
+        }
+       };
+
+    window.addEventListener("scroll", handleScroll);
+
     return () => {
-      if ('scrollRestoration' in window.history) {
-        window.history.scrollRestoration = 'auto';
-      }
-    }
-  }, [router.pathname]);
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
 
   return (
@@ -49,6 +59,7 @@ const router = useRouter();
               <Projects />
               <About />
               <Contact />
+              { showVerticalBtn && <ButtonDetail smart__class='vertical__arrow-btn' /> }
           </BasicLayout>
         </IndexContextProvider>
       </>
@@ -56,6 +67,21 @@ const router = useRouter();
 }
 
 
+  // useEffect(() => {
+  //   // Configurar scrollRestoration en manual solo en la página de inicio
+  //   if (router.pathname === '/*') {
+  //     if ('scrollRestoration' in window.history) {
+  //       window.history.scrollRestoration = 'manual';
+  //     }
+  //   }
+
+  //   // Limpiar la propiedad scrollRestoration en un efecto de limpieza cuando se desmonte el componente
+  //   return () => {
+  //     if ('scrollRestoration' in window.history) {
+  //       window.history.scrollRestoration = 'auto';
+  //     }
+  //   }
+  // }, [router.pathname]);
 
 
 

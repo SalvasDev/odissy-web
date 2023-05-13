@@ -15,7 +15,7 @@ export default function Hero() {
           <a href="#services"><Image className="icon arrow animate__animated animate__fadeInUp" width='100' src={arrow} alt='arrow'/></a>                         
         </div>
       </section>
-      <Image className="hero__gradients" width='800' src={gradients} alt='gradients' />                        
+      <Image className="hero__gradients" width='800' src={gradients} alt='gradients'  priority/>                        
     </div>
   )
 }
