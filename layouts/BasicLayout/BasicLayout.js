@@ -11,11 +11,14 @@ export default function BasicLayout({ children, title, project, platform, pageDe
   const description = project ? pageDescription.replace(regex, '') : '' // Remover todas las etiquetas HTML    
 
   const actualImageFullUrl = `https://www.byodisy.com${imageFullUrl}`
+
   return (
     <>
       <Head>
         <title>{titleActual}</title>
+
         <meta property="og:url" content={currentUrl} />
+
         <meta name='description' content={description} />
         <meta name='og:description' content={description} />
         <meta name='og:title' content={titleActual} />
