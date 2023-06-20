@@ -58,7 +58,7 @@ export default function Project() {
   var i = 1
   return (
     <>
-      <BasicLayout project={project} platform={platform} pageDescription={found?.description} imageFullUrl={found?.pics[0]} currentUrl={currentUrl}>
+      <BasicLayout project={project} platform={platform} pageDescription={found?.description} imageUrl={found?.pics[0]} currentUrl={currentUrl}>
         <div className="detail__container center">
           <section className="detail__info center">
             <div className="detail__data animate__animated animate__fadeInLeft">
