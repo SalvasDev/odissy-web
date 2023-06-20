@@ -8,7 +8,7 @@ export default function BasicLayout({ children, title, project, platform, pageDe
   const titleActual = title ? title : `${project} | ${platform}`
 
   const regex = /(<([^>]+)>)/ig; // Expresión regular para encontrar todas las etiquetas HTML
-  const description = pageDescription.replace(regex, ''); // Remover todas las etiquetas HTML
+  const description = project ? pageDescription.replace(regex, '') : '' // Remover todas las etiquetas HTML    
 
   return (
     <>
