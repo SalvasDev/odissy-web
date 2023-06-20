@@ -26,8 +26,8 @@ export default function BasicLayout({ children, title, project, platform, pageDe
             <meta name='og:image' content={imageUrl} />
           )
         }
-        {/* <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" /> */}
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
       </Head>
 
