@@ -1,24 +1,25 @@
 .footer__section {
   background-color: var(--bg-color-terc);
   margin-top: 15rem;
-  color: white;  
+  color: white;
   padding: 12rem 10rem;
   padding-bottom: 2rem;
   font-family: $font-prin;
   font-size: 1.8rem;
-    a {
-        text-decoration: none;
-        color: white;
-        
-        &:hover {
-          color: var(--accent-color); 
-        }
-    }
 
-    @include from(ds) {
-      padding: 12rem 3rem;
-      width: 100%;
-    }   
+  a {
+    text-decoration: none;
+    color: white;
+
+    &:hover {
+      color: var(--accent-color);
+    }
+  }
+
+  @include from(ds) {
+    padding: 12rem 3rem;
+    width: 100%;
+  }
 }
 
 .footer__section .logo__odissy {
@@ -30,10 +31,10 @@
   justify-content: space-between;
   min-height: 20rem;
 
-    @include from(ts) {        
-        flex-direction: column;
-        gap: 8rem;
-      }
+  @include from(ts) {
+    flex-direction: column;
+    gap: 8rem;
+  }
 }
 
 .footer__company {
@@ -41,9 +42,9 @@
   flex-direction: column;
   justify-content: space-between;
 
-    @include from(ts) {        
-      gap: 3rem;
-    }
+  @include from(ts) {
+    gap: 3rem;
+  }
 
 }
 
@@ -64,9 +65,9 @@
     font-size: 2.4rem;
   }
 
-    @include from(ts) {
-        gap: 3rem;
-      }
+  @include from(ts) {
+    gap: 3rem;
+  }
 }
 
 .footer__networks {
@@ -74,15 +75,15 @@
   flex-direction: column;
   justify-content: space-between;
 
-    span {
-        font-weight: 600;
-        font-size: 2.4rem;
-        margin-top: -.5rem;
-      }
+  span {
+    font-weight: 600;
+    font-size: 2.4rem;
+    margin-top: -.5rem;
+  }
 
-    @include from(ts) {
-      gap: 3rem;
-    }
+  @include from(ts) {
+    gap: 3rem;
+  }
 }
 
 .footer__columns {
@@ -90,13 +91,13 @@
   gap: 80%;
   margin-right: 20%;
 
-  @include from(ts) {      
-      flex-direction: row;
-      gap: 5rem;
-    }
+  @include from(ts) {
+    flex-direction: row;
+    gap: 5rem;
+  }
 }
 
-.footer__copy-politics  {
+.footer__copy-politics {
   display: flex;
   gap: 1rem;
   justify-content: center;
@@ -114,7 +115,7 @@
   }
 
   @include from(mobl) {
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     margin-left: 2rem;
   }
 
@@ -131,4 +132,3 @@
     color: var(--accent-color);
   }
 }
-

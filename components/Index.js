@@ -1,131 +1,140 @@
-import Link from 'next/link'
-import React, {useContext, useEffect, useState} from 'react'
+import { useContext, useEffect } from 'react'
 import IndexContext from '../context/IndexContext'
 
 
-const Index = ({ind}) => {
+const Index = ({ ind }) => {
 
   const { selected, setSelected } = useContext(IndexContext)
-  var {selec, indexSelected } = selected    
-
-  const { } = useContext(IndexContext)
+  var { selec, indexSelected } = selected
 
 
-
-  useEffect(()=> {
+  useEffect(() => {
 
     ///// Observer Start //////
-    const observerStart = new IntersectionObserver( function(entries) {
-      if ( entries[0].isIntersecting ) {
+    const observerStart = new IntersectionObserver(function (entries) {
+      if (entries[0].isIntersecting) {
         const actualIndex = {
-        selec : true,
-        indexSelected : 'Start'      
-      }    
-     
-      setSelected( actualIndex )
+          selec: true,
+          indexSelected: 'Start'
+        }
+
+        setSelected(actualIndex)
 
       } else {
-        return      
+        return
       }
     })
 
     // Element to observe
     observerStart.observe(document.querySelector('#start'));
+  }, [])
 
 
-    ///// Observer Services //////
-    const observer1 = new IntersectionObserver( function(entries) {
+  ///// Observer Services //////
+  useEffect(() => {
 
-      if ( entries[0].isIntersecting ) {
-  
+    const observer1 = new IntersectionObserver(function (entries) {
+
+      if (entries[0].isIntersecting) {
+
         var contMenu = document.querySelector('.services__section')
         contMenu.classList.add('animate__fadeInUp')
 
         const actualIndex = {
-        selec : true,
-        indexSelected : '01'      
-      }    
+          selec: true,
+          indexSelected: '01'
+        }
 
-      setSelected( actualIndex )
+        setSelected(actualIndex)
 
       } else {
         return
-        
+
       }
     })
 
 
     // Element to observe
     observer1.observe(document.querySelector('#ind__one'));
+  }, [])
 
 
 
-    ///// Observer Projects //////
-    const observer2 = new IntersectionObserver( function(entries) {
+  ///// Observer Projects //////
+  useEffect(() => {
 
-      if ( entries[0].isIntersecting ) {
+    const observer2 = new IntersectionObserver(function (entries) {
+
+      if (entries[0].isIntersecting) {
 
         var contMenu = document.querySelector('.projects__section')
         contMenu.classList.add('animate__fadeInUp')
 
         const actualIndex = {
-        selec : true,
-        indexSelected : '02'      
-      }    
+          selec: true,
+          indexSelected: '02'
+        }
 
-      setSelected( actualIndex )
+        setSelected(actualIndex)
 
 
       } else {
         return
-        
+
       }
     })
 
     // Element to observe
     observer2.observe(document.querySelector('#ind__two'));
+  }, [])
 
 
-    ///// Observer Us ///// 
-    const observer3 = new IntersectionObserver( function(entries) {
+  ///// Observer Us ///// 
+  useEffect(() => {
 
-      if ( entries[0].isIntersecting ) {
+    const observer3 = new IntersectionObserver(function (entries) {
+
+      if (entries[0].isIntersecting) {
 
         var contMenu = document.querySelector('.about__section')
         contMenu.classList.add('animate__fadeInUp')
-      
-        const actualIndex = {
-        selec : true,
-        indexSelected : '03'      
-      }    
 
-      setSelected( actualIndex )
+        const actualIndex = {
+          selec: true,
+          indexSelected: '03'
+        }
+
+        setSelected(actualIndex)
 
       } else {
         return
-        
+
       }
     })
-    // Element to observe
     observer3.observe(document.querySelector('#ind__three'));
+  }, [])
+
+
+  // Element to observe
+  useEffect(() => {
 
     ///// Observer Contact //////
-    const observer4 = new IntersectionObserver( function(entries) {
+    const observer4 = new IntersectionObserver(function (entries) {
 
-      if ( entries[0].isIntersecting ) {
+      if (entries[0].isIntersecting) {
 
         var contMenu = document.querySelector('.contact__section')
         contMenu.classList.add('animate__fadeInUp')
 
         const actualIndex = {
-        selec : true,
-        indexSelected : '04'      
-      }    
-      setSelected( actualIndex )
-      
+          selec: true,
+          indexSelected: '04'
+        }
+        setSelected(actualIndex)
+
       } else {
         return
-        
+
       }
     })
 
@@ -133,27 +142,22 @@ const Index = ({ind}) => {
     observer4.observe(document.querySelector('#ind__four'));
 
 
-  },[])
+  }, [])
 
-  var newInd = 
-      ind === 'Start' ? 'start' 
-      : ind === '01' ? 'ind__one' 
-      : ind === '02' ? 'ind__two' 
-      : ind === '03' ? 'ind__three' 
-      : ind === '04' ? 'ind__four' 
-      : null
+  var newInd =
+    ind === 'Start' ? 'start'
+      : ind === '01' ? 'ind__one'
+        : ind === '02' ? 'ind__two'
+          : ind === '03' ? 'ind__three'
+            : ind === '04' ? 'ind__four'
+              : null
 
-  var identi = '#'+newInd  
+  var identi = '#' + newInd
 
-  var btnSelected = selec && (indexSelected === ind)  ? 'index__item selected' : 'index__item'  
-  
+  var btnSelected = selec && (indexSelected === ind) ? 'index__item selected' : 'index__item'
+
   return (
-        <a 
-            href={identi}
-            className= { btnSelected }
-        >
-            {ind}
-         </a>
+    <a href={identi} className={btnSelected} > {ind} </a>
   )
 }
 

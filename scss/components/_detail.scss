@@ -1,19 +1,19 @@
 .detail__container {
   font-family: $font-prin;
-  font-size: 1.4rem;
-  font-weight: 400;  
+  font-size: 1.6rem;
+  font-weight: 400;
   display: flex;
-  flex-direction: column;  
+  flex-direction: column;
   margin-top: 15rem;
 }
 
 .detail__info {
-    width: min(95%, 1157px);
-    padding: 0 8rem;
-    display: grid;
-    grid-template-columns: 50% 1fr;
-    column-gap: 4rem;
-    
+  width: min(95%, 1157px);
+  padding: 0 8rem;
+  display: grid;
+  grid-template-columns: 50% 1fr;
+  column-gap: 4rem;
+
   @include from(t) {
     display: flex;
     flex-direction: column;
@@ -53,25 +53,25 @@
 .detail__gallery {
   display: flex;
   flex-direction: column;
-  gap: 4rem; 
+  gap: 4rem;
   width: 100%;
   margin-top: 10rem;
   padding: 0 8rem;
 
   @include from(t) {
-      padding: 0 4rem;
-    }
+    padding: 0 4rem;
+  }
 
   @include from(mobl) {
-      padding: 0 2rem;
-      gap: 2rem;
-    }
+    padding: 0 2rem;
+    gap: 2rem;
+  }
 }
 
 .detail__image {
   width: 100%;
   height: 100%;
-  animation-delay: .75s;  
+  animation-delay: .75s;
   transition: all 600ms ease;
 }
 
@@ -86,7 +86,8 @@
   a {
     color: var(--main-color);
     margin-left: 1rem;
-    &:hover  {
+
+    &:hover {
       color: var(--accent-color);
     }
   }
@@ -97,4 +98,3 @@
   font-size: 1.6rem;
   width: 90%;
 }
-

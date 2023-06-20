@@ -1,7 +1,7 @@
 .projects__section {
   margin-top: 10rem;
   min-height: 100vh;
-  background-color: var(--bg-color);  
+  background-color: var(--bg-color);
 }
 
 
@@ -31,14 +31,14 @@
     margin-right: 1rem;
   }
 
-  
+
   span {
     opacity: .3;
 
     @include from(t) {
       display: none;
     }
-  }  
+  }
 }
 
 .projects__labels {
@@ -82,11 +82,11 @@
 
   @include from(mobl) {
     padding: .5rem 2.5rem;
-   }
+  }
 
   &:hover {
     background-color: var(--accent-color);
-    border: 2px solid var(--accent-color);  
+    border: 2px solid var(--accent-color);
     color: black;
   }
 
@@ -94,5 +94,5 @@
 
 .projects__gallery {
   width: min(90%, 1600px);
-  
+
 }

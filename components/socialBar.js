@@ -1,12 +1,11 @@
-import React from 'react'
+import Image from 'next/image'
 import { Poppins } from '@next/font/google'
 import instagram from '../assets/img/Instagram.svg'
 import behance from '../assets/img/behance.svg'
 import dribbble from '../assets/img/dribbble.svg'
-import Image from 'next/image'
 
 const poppins = Poppins({
-  weight: ['400', '500', '600','700'],
+  weight: ['400', '500', '600', '700'],
   style: ['normal']
 })
 const Socialbar = () => {
@@ -18,5 +17,5 @@ const Socialbar = () => {
       <a href="https://dribbble.com/odisy" target="_blank" rel="noopener noreferrer"><Image width='42' className="icon" src={dribbble} alt="Icon Dribble" /></a>
     </div>
   )
-} 
+}
 export default Socialbar

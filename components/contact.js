@@ -1,9 +1,8 @@
-import React from 'react'
 import FormContact from './formContact'
 
 export default function Contact() {
   return (
-    <section className='contact__section animate__animated animate__fadeInUp' id='contact'>      
+    <section className='contact__section animate__animated animate__fadeInUp' id='contact'>
       <div className="contact__container">
         <div className="contact__header" id='ind__four'>
           <h2 className="contact__title"  ><span>04 </span>Hablemos</h2>
@@ -13,8 +12,8 @@ export default function Contact() {
         {/* Grid contact form */}
         <div className="form__section" >
 
-          <div className="form__inputs" >            
-            <FormContact/>
+          <div className="form__inputs" >
+            <FormContact />
           </div>
 
           <div className="contact__info">

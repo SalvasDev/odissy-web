@@ -1,5 +1,4 @@
 import React from 'react'
-import Head from 'next/head'
 import BasicLayout from '../layouts/BasicLayout/BasicLayout'
 import Contact from '../components/contact'
 import 'animate.css'
@@ -9,17 +8,11 @@ import 'animate.css'
 export default function ContactPage() {
   return (
     <>
-    <Head>      
-      <title>
-       services
-      </title>
-    </Head>
-    
-    <BasicLayout>
-      <section className="section__page">
-        <Contact/>
-      </section>
-    </BasicLayout>
+      <BasicLayout title='Contacto page' pageDescription='Aquí puedes enviarnos tus datos para poder comuncarnos contigo'>
+        <section className="section__page">
+          <Contact />
+        </section>
+      </BasicLayout>
     </>
   )
 }

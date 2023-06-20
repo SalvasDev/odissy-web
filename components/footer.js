@@ -1,6 +1,5 @@
-import React from 'react'
 import Image from 'next/image'
-import logo from '../assets/img/logo-odissy.svg' 
+import logo from '../assets/img/logo-odissy.svg'
 import Link from 'next/link'
 
 export default function Footer() {
@@ -8,9 +7,9 @@ export default function Footer() {
     <section className="footer__section">
       <div className="container center">
         <div className="footer__company">
-          <Link href="/"> 
+          <Link href="/">
             <Image className="logo__odissy" width='90' src={logo} alt='Logotype Odisy' />
-          </Link> 
+          </Link>
 
           <div className="footer__company-info">
             <span>443 238 2668</span>
@@ -20,20 +19,20 @@ export default function Footer() {
         </div>
         <div className="footer__columns">
           <div className="footer__menu">
-              <span>Menú</span>
-              <Link href='/#services'>Servicios</Link>
-              <Link href='/#projects'>Proyectos</Link>
-              <Link href='/#about'>Nosotros</Link>
-              <Link href='/#contact'>Contacto</Link>
+            <span>Menú</span>
+            <Link href='/#services'>Servicios</Link>
+            <Link href='/#projects'>Proyectos</Link>
+            <Link href='/#about'>Nosotros</Link>
+            <Link href='/#contact'>Contacto</Link>
           </div>
 
-          <div className="footer__networks"> 
-              <span>Redes</span>
+          <div className="footer__networks">
+            <span>Redes</span>
 
-              <a href='https://www.linkedin.com/company/odisy-std/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
-              <a href='https://www.instagram.com/byodisy/' target="_blank" rel="noopener noreferrer">Instagram</a>
-              <a href='https://www.behance.net/odisy' target="_blank" rel="noopener noreferrer">Behance</a>
-              <a href='https://dribbble.com/odisy' target="_blank" rel="noopener noreferrer">Dribbble</a>
+            <a href='https://www.linkedin.com/company/odisy-std/' target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href='https://www.instagram.com/byodisy/' target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href='https://www.behance.net/odisy' target="_blank" rel="noopener noreferrer">Behance</a>
+            <a href='https://dribbble.com/odisy' target="_blank" rel="noopener noreferrer">Dribbble</a>
           </div>
         </div>
 

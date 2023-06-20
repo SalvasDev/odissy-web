@@ -10,12 +10,12 @@
     padding-left: 2rem;
   }
 
- 
+
 
   label {
     font-size: 1.6rem;
     display: block;
-    color: var(--main-color);  
+    color: var(--main-color);
   }
 
   input {
@@ -23,7 +23,8 @@
     color: var(--main-color);
   }
 
-  input, textarea {
+  input,
+  textarea {
     display: block;
     margin-top: .5rem;
     font-family: $font-prin;
@@ -36,17 +37,18 @@
     color: var(--main-color);
 
     @include from(t) {
-        width: 100%;
-      }
+      width: 100%;
+    }
   }
 
 }
 
 .form__button {
   width: 80%;
-      @include from(t) {
-        width: 100%;
-      }
+
+  @include from(t) {
+    width: 100%;
+  }
 }
 
 .btn__send {
@@ -57,17 +59,17 @@
   border: none;
   background-color: var(--accent-color);
   text-transform: uppercase;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   font-weight: 500;
   border-radius: 2.4rem;
   cursor: pointer;
   color: black;
 
-    @include from(t) {
-        margin-left: auto;
-        margin-right: 0;
-      }
-  
+  @include from(t) {
+    margin-left: auto;
+    margin-right: 0;
+  }
+
   &:hover {
     background-color: aquamarine;
   }
