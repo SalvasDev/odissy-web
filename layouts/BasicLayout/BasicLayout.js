@@ -10,20 +10,23 @@ export default function BasicLayout({ children, title, project, platform, pageDe
   const regex = /(<([^>]+)>)/ig; // Expresión regular para encontrar todas las etiquetas HTML
   const description = project ? pageDescription.replace(regex, '') : '' // Remover todas las etiquetas HTML    
 
+  const actualImageFullUrl = `https://www.byodisy.com${imageFullUrl}`
   return (
     <>
       <Head>
         <title>{titleActual}</title>
         <meta property="og:url" content={currentUrl} />
         <meta name='description' content={description} />
-        <meta name='og:title' content={titleActual} />
         <meta name='og:description' content={description} />
+        <meta name='og:title' content={titleActual} />
         <meta property="og:image:type" content="image/png" />
         {
           imageFullUrl && (
-            <meta name='og:image' content={imageFullUrl} />
+            <meta name='og:image' content={actualImageFullUrl} />
           )
         }
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
 
       </Head>
 
