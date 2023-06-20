@@ -11,6 +11,9 @@ export default function Project() {
   const router = useRouter()
   const { project, platform } = router.query
 
+  const currentUrl = `https://www.byodisy.com${router.asPath}`;
+
+
   const [showVerticalBtnDetail, setShowVerticalBtnDetail] = useState(false)
 
   const found = dbProjects.find(element => (element?.name === project && element?.area === platform));
@@ -55,7 +58,7 @@ export default function Project() {
   var i = 1
   return (
     <>
-      <BasicLayout project={project} platform={platform} pageDescription={found?.description} imageFullUrl={found?.pics[0]}>
+      <BasicLayout project={project} platform={platform} pageDescription={found?.description} imageFullUrl={found?.pics[0]} currentUrl={currentUrl}>
         <div className="detail__container center">
           <section className="detail__info center">
             <div className="detail__data animate__animated animate__fadeInLeft">
@@ -64,7 +67,7 @@ export default function Project() {
               <h3 className="detail__area">{(found?.area || '').charAt(0).toUpperCase() + (found?.area || '').slice(1)}</h3>
               <h3 className="detail__element">Diseño: {found?.designed}</h3>
               {found?.developed && <h3 className="detail__element">Desarrollo: {found?.developed}</h3>}
-              <h4 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=https://odissy.vercel.app/${found?.area}/${found?.name}`} target='_blank' rel='noreferrer'>FB</a></h4>
+              <h4 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target='_blank' rel='noreferrer'>FB</a></h4>
             </div>
             <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent} />
           </section>
