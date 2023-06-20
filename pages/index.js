@@ -23,7 +23,7 @@ export default function Home() {
     positionAnchor()
 
     const handleScroll = () => {
-      const distanceFromTop = window.pageYOffset || document.documentElement.scrollTop;
+      const distanceFromTop = window.scrollY || document.documentElement.scrollTop;
       const totalHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
       const distanceInPercentage = (distanceFromTop / totalHeight) * 100;
 
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <IndexContextProvider>
-        <BasicLayout title='Odisy website' pageDescription='Odisy es una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia. Somos especialistas en diseño y desarrollo web, páginas web, landing pageas e identidad corporativa como logotipos, diseño gráfico profesional, diseño editorial y creación de contenido para redes sociales.'>
+        <BasicLayout title='Odisy website' pageDescription='Somos una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia. En odisy especialistas en diseño y desarrollo web, páginas web, landing pageas e identidad corporativa como logotipos, diseño gráfico profesional, diseño editorial y creación de contenido para redes sociales.'>
           <Hero />
           <Socialbar />
           <IndexBar />
