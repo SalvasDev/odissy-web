@@ -10,7 +10,7 @@ export default function Document() {
         <meta name="google-site-verification" content="JzSQH_lxAd9eEJDh_-lDjH7dFsvhf-gSC1yvGrQ9v9g" />
         <meta property="og:url" content="https://www.byodisy.com" />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/imageHome.jpg" />
+        <meta property="og:image" content="/public/imageHome.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
