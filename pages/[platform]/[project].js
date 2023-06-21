@@ -70,7 +70,13 @@ export default function Project() {
               {found?.developed && <h3 className="detail__element">Desarrollo: {found?.developed}</h3>}
               <h4 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target='_blank' rel='noreferrer'>FB</a></h4>
             </div>
-            <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent} />
+            <div>
+              <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent} />
+              <div className="projects__labels">
+                <a href={found?.code} target="_blank" rel="noopener noreferrer"><button className="projects__btn">Código</button></a>
+                <a href={found?.demo} target="_blank" rel="noopener noreferrer"><button className="projects__btn">Demo</button></a>
+              </div>
+            </div>
           </section>
 
           <section className="detail__gallery center">
