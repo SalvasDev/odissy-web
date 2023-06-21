@@ -73,7 +73,7 @@ export default function Project() {
             <div>
               <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent} />
               <div className="projects__labels">
-                <a href={found?.code} target="_blank" rel="noopener noreferrer"><button className="projects__btn">Código</button></a>
+                {/* <a href={found?.code} target="_blank" rel="noopener noreferrer"><button className="projects__btn">Código</button></a> */}
                 <a href={found?.demo} target="_blank" rel="noopener noreferrer"><button className="projects__btn">Demo</button></a>
               </div>
             </div>
