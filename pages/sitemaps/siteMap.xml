@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.byodisy.com/sitemaps/siteMap">
+  <url>
+    <loc>https://www.byodisy.com</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.byodisy.com/projectsPage</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.9</priority>
+  </url>  
+  <url>
+    <loc>https://www.byodisy.com/servicesPage</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.8</priority>
+  </url>    
+    <loc>https://www.byodisy.com/aboutPage</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.7</priority>
+  </url>     
+  </url>    
+    <loc>https://www.byodisy.com/contactPage</loc>
+    <lastmod>2023-06-22</lastmod>
+    <changefreq>always</changefreq>
+    <priority>0.6</priority>
+  </url>    
+</urlset>
