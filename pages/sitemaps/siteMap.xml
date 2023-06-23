@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.byodisy.com/sitemaps/siteMap">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://www.byodisy.com</loc>
     <lastmod>2023-06-22</lastmod>
@@ -18,12 +18,13 @@
     <changefreq>always</changefreq>
     <priority>0.8</priority>
   </url>    
+  <url>
     <loc>https://www.byodisy.com/aboutPage</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>always</changefreq>
     <priority>0.7</priority>
   </url>     
-  </url>    
+  <url>    
     <loc>https://www.byodisy.com/contactPage</loc>
     <lastmod>2023-06-22</lastmod>
     <changefreq>always</changefreq>
