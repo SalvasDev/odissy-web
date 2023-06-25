@@ -205,15 +205,12 @@ export const dbProjects = [
     name: "Pizzas Don Remolo",
     designed: "Paola Rivero y Salvador Sánchez",
     developed: "Salvador Sánchez",
-    thumbnail: "/img/don-remolo/thumb-don.remolo.png",
+    thumbnail: "/img/don-remolo/thumb-don-remolo.png",
     pics:
       [
         '/img/don-remolo/loading.png',
         '/img/don-remolo/menu.png',
         '/img/don-remolo/pizzas.png',
-        // '/img/don-remolo/empanadas.png',
-        // '/img/don-remolo/bebidas.png',
-        // '/img/don-remolo/postres.png',
         '/img/don-remolo/cart.png',
 
       ],
