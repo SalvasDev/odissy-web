@@ -199,7 +199,28 @@ export const dbProjects = [
   //   code: 'https://github.com/SalvasDev/weather-app',
   //   demo: 'https://weather-app-sal.netlify.app/'
   // },
+  {
+    id: '106',
+    area: "web",
+    name: "Pizzas Don Remolo",
+    designed: "Paola Rivero y Salvador Sánchez",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/don-remolo/thumb-don.remolo.png",
+    pics:
+      [
+        '/img/don-remolo/loading.png',
+        '/img/don-remolo/menu.png',
+        '/img/don-remolo/pizzas.png',
+        // '/img/don-remolo/empanadas.png',
+        // '/img/don-remolo/bebidas.png',
+        // '/img/don-remolo/postres.png',
+        '/img/don-remolo/cart.png',
 
+      ],
+    description: "<p><strong>Don Remolo Pizzas</strong> es una aplicación web para vender pizzas y otros alimentos.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js, Material UI, Node y Mongodbon. La gestión de versiones se realizó con Git y Github.</p>",
+    code: 'https://github.com/SalvasDev/Pizzas-Don-Remolo',
+    demo: '/videoDemos'
+  },
 
 
 ];

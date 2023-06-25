@@ -10,8 +10,8 @@ export default function About() {
           <h2 className="about__title"><span>03 </span>Nosotros</h2>
           <p>Somos un estudio de diseño y desarrollo web ubicado en Morelia.
 
-            <br /><br /> Ayudamos a pequeñas y medianas empresas a dar a conocer sus productos o servicios en internet.
-            <br /><br /> Creamos soluciones sencillas con tecnología y diseño.
+            <br /><br />Ayudamos a pequeñas y medianas empresas a dar a conocer sus productos o servicios en internet.
+            <br /><br />Creamos soluciones sencillas con tecnología y diseño.
           </p>
           <div className="decora__text"></div>
         </div>

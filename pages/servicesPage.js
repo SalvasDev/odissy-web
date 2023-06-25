@@ -1,4 +1,3 @@
-import React from 'react'
 import BasicLayout from '../layouts/BasicLayout/BasicLayout'
 import Services from '../components/services'
 

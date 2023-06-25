@@ -1,8 +1,30 @@
 import Head from 'next/head'
 import Footer from '../../components/footer'
 import Header from '../../components/header'
+import Script from 'next/script';
+import { useRouter } from 'next/router';
+import { useEffect } from 'react';
+
 
 export default function BasicLayout({ children, title, project, platform, pageDescription, imageUrl, currentUrl }) {
+
+  const router = useRouter();
+
+
+  useEffect(() => {
+    const handleRouteChange = (url) => {
+      window.dataLayer = window.dataLayer || [];
+      function gtag() { dataLayer.push(arguments) }
+      gtag('js', new Date());
+      gtag('config', 'G-WQYQ1DMCWH');
+    };
+
+    router.events.on('routeChangeComplete', handleRouteChange);
+
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange);
+    };
+  }, []);
 
 
   const titleActual = title ? title : `${project} | ${platform}`
@@ -33,11 +55,21 @@ export default function BasicLayout({ children, title, project, platform, pageDe
       </Head>
 
       <div>
-
         <Header />
       </div>
       {children}
       <Footer />
+      <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WQYQ1DMCWH"></Script>
+      <script
+        dangerouslySetInnerHTML={{
+          __html: `
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments)}
+            gtag('js', new Date());
+            gtag('config', 'G-WQYQ1DMCWH');
+          `,
+        }}
+      />
     </>
   )
 }

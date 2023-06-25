@@ -1,0 +1,14 @@
+.video {
+  width: 70%;
+  overflow: hidden;
+  margin: auto;
+
+  @include from(ts) {
+    width: 95%;
+  }
+
+  video {
+    display: block;
+    width: 100%;
+  }
+}
