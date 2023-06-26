@@ -183,24 +183,24 @@ export const dbProjects = [
     code: 'https://github.com/SalvasDev/remo-jobs',
     demo: 'https://remo-jobs.netlify.app/'
   },
-  // {
-  //   id: '106',
-  //   area: "web",
-  //   name: "Weather app",
-  //   designed: "Thu Nghiem",
-  //   developed: "Salvador Sánchez",
-  //   thumbnail: "/img/weather-app/thumb-weather-app.png",
-  //   pics:
-  //     [
-  //       '/img/weather-app/weather-app-1.png'
-
-  //     ],
-  //   description: "<p><strong>Weather app</strong> es una aplicación para consultar el clima en muchas ciudades del mundo. Esta aplicación utiliza varias consultas de API. <br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>",
-  //   code: 'https://github.com/SalvasDev/weather-app',
-  //   demo: 'https://weather-app-sal.netlify.app/'
-  // },
   {
     id: '106',
+    area: "web",
+    name: "Weather app",
+    designed: "Thu Nghiem",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/weather-app/thumb-weather-app.png",
+    pics:
+      [
+        '/img/weather-app/weather-app-1.png'
+
+      ],
+    description: "<p><strong>Weather app</strong> es una aplicación para consultar el clima en muchas ciudades del mundo. Esta aplicación utiliza varias consultas de API. <br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>",
+    code: 'https://github.com/SalvasDev/weather-app',
+    demo: 'https://weather-app-sal.netlify.app/'
+  },
+  {
+    id: '107',
     area: "web",
     name: "Pizzas Don Remolo",
     designed: "Paola Rivero y Salvador Sánchez",
