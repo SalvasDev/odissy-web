@@ -15,6 +15,11 @@ export default function Document() {
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
+
+        <link rel="canonical" href="https://www.byodisy.com/projectsPage" />
+        <link rel="canonical" href="https://www.byodisy.com/aboutPage" />
+        <link rel="canonical" href="https://www.byodisy.com/servicesPage" />
+
       </Head>
 
       <body>
