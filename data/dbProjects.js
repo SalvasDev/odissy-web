@@ -218,6 +218,39 @@ export const dbProjects = [
     code: 'https://github.com/SalvasDev/Pizzas-Don-Remolo',
     demo: '/videoDemos'
   },
+  {
+    id: '108',
+    area: "web",
+    name: "Pokémon app",
+    designed: "Fernando Herrera",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/pokemon/thumb-pokemon.png",
+    pics:
+      [
+        '/img/pokemon/pokemon-home.png',
+        '/img/pokemon/pokemon-detail.png',
+        '/img/pokemon/pokemon-favorites.png',
 
+      ],
+    description: "<p><strong>Pokemon App</strong> es una aplicación web que extrae pokemons de una api y los muestra con un renderizado estatico de lado del servidor para servir la información en tiempo de producción.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js y Next UI. La gestión de versiones se realizó con Git y Github.</p>",
+    code: 'https://github.com/SalvasDev/02-pokemon-static',
+    demo: 'https://02-pokemon-static-sigma.vercel.app/'
+  },
+  {
+    id: '109',
+    area: "web",
+    name: "OpenJira app",
+    designed: "Fernando Herrera",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/open-jira/thumb-openjira.png",
+    pics:
+      [
+        '/img/open-jira/openjira-home.png',
+        '/img/open-jira/openjira-edition.png',
+      ],
+    description: "<p><strong>OpenJira app</strong> es una aplicación web que nos permite agregar, editar y eliminar tareas así como modificar su status modificando su etiqueta o arrastrando a la columna deseada.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js y Material UI para el front-end y Nodejs y Mongodb para el backend. La gestión de versiones se realizó con Git y Github.</p>",
+    code: 'https://github.com/SalvasDev/03-open-jira',
+    demo: 'https://03-open-jira-taupe.vercel.app/'
+  },
 
 ];
