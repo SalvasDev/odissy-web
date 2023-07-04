@@ -1,4 +1,4 @@
-import BasicLayout from "../layouts/BasicLayout/BasicLayout"
+import BasicLayout from "../../layouts/BasicLayout/BasicLayout"
 
 const VideoDemosPage = () => {
   return (

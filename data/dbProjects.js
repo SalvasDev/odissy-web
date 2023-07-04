@@ -183,22 +183,22 @@ export const dbProjects = [
     code: 'https://github.com/SalvasDev/remo-jobs',
     demo: 'https://remo-jobs.netlify.app/'
   },
-  // {
-  //   id: '106',
-  //   area: "web",
-  //   name: "Weather app",
-  //   designed: "Thu Nghiem",
-  //   developed: "Salvador Sánchez",
-  //   thumbnail: "/img/weather-app/thumb-weather-app.png",
-  //   pics:
-  //     [
-  //       '/img/weather-app/weather-app-1.png'
+  {
+    id: '106',
+    area: "web",
+    name: "Weather app",
+    designed: "Thu Nghiem",
+    developed: "Salvador Sánchez",
+    thumbnail: "/img/weather-app/thumb-weather-app.png",
+    pics:
+      [
+        '/img/weather-app/weather-app-1.png'
 
-  //     ],
-  //   description: "<p><strong>Weather app</strong> es una aplicación para consultar el clima en muchas ciudades del mundo. Esta aplicación utiliza varias consultas de API. <br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>",
-  //   code: 'https://github.com/SalvasDev/weather-app',
-  //   demo: 'https://weather-app-sal.netlify.app/'
-  // },
+      ],
+    description: "<p><strong>Weather app</strong> es una aplicación para consultar el clima en muchas ciudades del mundo. Esta aplicación utiliza varias consultas de API. <br/> <br/>Para su realización utilicé diversas tecnologías, como JavaScript con la biblioteca React, componentes de estilo CSS3 y JSX para crear la interfaz de usuario. La gestión de versiones se realizó con Git y Github, y la aplicación se implementó en Netlify.</p>",
+    code: 'https://github.com/SalvasDev/weather-app',
+    demo: 'https://weather-app-sal.netlify.app/'
+  },
   {
     id: '107',
     area: "web",
@@ -216,7 +216,7 @@ export const dbProjects = [
       ],
     description: "<p><strong>Don Remolo Pizzas</strong> es una aplicación web para vender pizzas y otros alimentos.<br/> <br/>Para su realización utilizamos diversas tecnologías como: Next.js, Material UI, Node y Mongodbon. La gestión de versiones se realizó con Git y Github.</p>",
     code: 'https://github.com/SalvasDev/Pizzas-Don-Remolo',
-    demo: '/videoDemos'
+    demo: 'https://remolo-pizzas.vercel.app/'
   },
   {
     id: '108',
