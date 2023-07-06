@@ -8,7 +8,7 @@ export default function Document() {
 
         <meta name="google-site-verification" content="JzSQH_lxAd9eEJDh_-lDjH7dFsvhf-gSC1yvGrQ9v9g" />
 
-        <meta name='og:title' content='Diseño y desarrollo de páginas web en Morelia' />
+        <meta name='og:title' content='Diseño y desarrollo de páginas web y logotipos en Morelia' />
         <meta property="og:url" content="https://www.byodisy.com" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/imageHome.jpg" />
