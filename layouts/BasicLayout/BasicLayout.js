@@ -32,7 +32,8 @@ export default function BasicLayout({ children, title, project, platform, pageDe
   const regex = /(<([^>]+)>)/ig; // Expresión regular para encontrar todas las etiquetas HTML
   const description = project ? pageDescription.replace(regex, '') : '' // Remover todas las etiquetas HTML    
 
-  const actualImageUrl = title === 'Diseño y desarrollo de páginas web y logotipos en Morelia'  `https://www.byodisy.com${imageUrl}`;
+  const actualImageUrl = title === 'Diseño y desarrollo de páginas web y logotipos en Morelia' ? "/imageHome.jpg" : `https://www.byodisy.com${imageUrl}`;
+  const imageType = title === 'Diseño y desarrollo de páginas web y logotipos en Morelia' ? "image/jpg" : "image/png"
   return (
     <>
       <Head>
@@ -45,10 +46,10 @@ export default function BasicLayout({ children, title, project, platform, pageDe
         <meta name='og:description' content={description} />
         {
           imageUrl && (
-            <meta property="og:image" content="/imageHome.jpg" />
+            <meta name='og:image' content={actualImageUrl} />
           )
         }
-        <meta property="og:image:type" content="image/jpg" />
+        <meta property="og:image:type" content={imageType} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
 
