@@ -7,14 +7,14 @@ export default function Document() {
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
 
         <meta name="google-site-verification" content="JzSQH_lxAd9eEJDh_-lDjH7dFsvhf-gSC1yvGrQ9v9g" />
-
+        {/* 
         <meta name='og:title' content='Diseño y desarrollo de páginas web y logotipos en Morelia' />
         <meta property="og:url" content="https://www.byodisy.com" />
-        <meta property="og:type" content="website" />
-        <meta property="og:image" content="/imageHome.jpg" />
+        <meta property="og:type" content="website" /> */}
+        {/* <meta property="og:image" content="/imageHome.jpg" />
         <meta property="og:image:type" content="image/jpg" />
         <meta property="og:image:width" content="1200" />
-        <meta property="og:image:height" content="630" />
+        <meta property="og:image:height" content="630" /> */}
 
         <link rel="canonical" href="https://www.byodisy.com/servicesPage" />
         <link rel="canonical" href="https://www.byodisy.com/projectsPage" />
