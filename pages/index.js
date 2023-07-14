@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <>
       <IndexContextProvider>
-        <BasicLayout title='Diseño y desarrollo de páginas web y logotipos en Morelia' pageDescription='Somos una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia. En odisy especialistas en diseño y desarrollo web, páginas web, landing pageas e identidad corporativa como logotipos, diseño gráfico profesional, diseño editorial y creación de contenido para redes sociales.'>
+        <BasicLayout title='Página web en Morelia. Branding & web Odisy std. ' pageDescription='Somos una empresa dedicada al diseño y desarrollo web en la ciudad de Morelia. En odisy especialistas en diseño y desarrollo web, páginas web, landing pageas e identidad corporativa como logotipos, diseño gráfico profesional, diseño editorial y creación de contenido para redes sociales.'>
           <Hero />
           <Socialbar />
           <IndexBar />

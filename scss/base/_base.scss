@@ -32,7 +32,7 @@ img {
   body:not(.force-light) {
     --bg-color: #0C152D;
     --bg-color-terc: #071848;
-    --main-color: white;  
+    --main-color: white;
     --bg-color-sec: #071848;
     --negative-color: black;
     --icons: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(318deg) brightness(111%) contrast(100%);
@@ -50,7 +50,7 @@ body.force-dark {
   --bg-color-sec: #071848;
   --negative-color: black;
   --main-sections-text-color: var(--accent-color);
-  
+
 }
 
 body.force-light {
@@ -58,7 +58,7 @@ body.force-light {
   --main-color: #00242A;
   --title: var(--main-color);
   --icons: brightness(0) saturate(100%) invert(0%) sepia(0%) saturate(23%) hue-rotate(123deg) brightness(98%) contrast(96%);
-}   
+}
 
 .container {
   width: min(90%, 1174px);
@@ -70,7 +70,7 @@ body.force-light {
 }
 
 button {
-    font-family: $font-prin, sans-serif;
+  font-family: $font-prin, sans-serif;
 }
 
 .error {
@@ -92,8 +92,8 @@ button {
   margin-top: 5rem;
 
   @include from(t) {
-      margin-left: 0;
-    }
+    margin-left: 0;
+  }
 }
 
 .ml-0 {
@@ -105,10 +105,10 @@ button {
   margin-top: -34rem;
   margin-bottom: 34rem;
 
-    @include from(t) {
-        margin-top: -12rem;
-        margin-bottom: 12rem;
-      }
+  @include from(t) {
+    margin-top: -12rem;
+    margin-bottom: 12rem;
+  }
 }
 
 .section__about-page {
@@ -168,4 +168,15 @@ button {
     filter: invert(0%) sepia(99%) saturate(3%) hue-rotate(148deg) brightness(99%) contrast(101%);
     opacity: 1;
   }
+}
+
+
+.fadeIn {
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
 }

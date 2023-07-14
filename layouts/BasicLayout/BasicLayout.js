@@ -57,7 +57,9 @@ export default function BasicLayout({ children, title, project, platform, pageDe
       <div>
         <Header />
       </div>
-      {children}
+      <div className="fadeIn">
+        {children}
+      </div>
       <Footer />
       <Script async src="https://www.googletagmanager.com/gtag/js?id=G-WQYQ1DMCWH"></Script>
       <script

@@ -63,12 +63,12 @@ export default function Project() {
         <div className="detail__container center">
           <section className="detail__info center">
             <div className="detail__data animate__animated animate__fadeInLeft">
-              <h2 className="detail__title">{found?.name}</h2>
+              <h1 className="detail__title">{found?.name}</h1>
               <div className="detail__vertical-line"></div>
-              <h3 className="detail__area">{(found?.area || '').charAt(0).toUpperCase() + (found?.area || '').slice(1)}</h3>
-              <h3 className="detail__element">Diseño: {found?.designed}</h3>
+              <h2 className="detail__area">{(found?.area || '').charAt(0).toUpperCase() + (found?.area || '').slice(1)}</h2>
+              <h2 className="detail__element">Diseño: {found?.designed}</h2>
               {found?.developed && <h3 className="detail__element">Desarrollo: {found?.developed}</h3>}
-              <h4 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target='_blank' rel='noreferrer'>FB</a></h4>
+              <h3 className="detail__share">Compartir en: <a href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(currentUrl)}`} target='_blank' rel='noreferrer'>FB</a></h3>
             </div>
             <div>
               <div className="description animate__animated animate__fadeInRight" dangerouslySetInnerHTML={htmlContent} />
