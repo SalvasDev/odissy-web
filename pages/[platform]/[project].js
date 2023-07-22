@@ -55,7 +55,7 @@ export default function Project() {
     };
   }, []);
 
-  baseUrl = 'http://www.byodisy.com'
+  const baseUrl = 'http://www.byodisy.com'
   const imageUrl = baseUrl + found?.pics[0]
   var i = 1
   return (
