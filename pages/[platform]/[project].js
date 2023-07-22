@@ -33,7 +33,7 @@ export default function Project() {
     return () => {
       window.removeEventListener('popstate', handleRouteChange);
     };
-  }, []);
+  }, [router]);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -55,12 +55,12 @@ export default function Project() {
     };
   }, []);
 
-  const baseUrl = 'http://www.byodisy.com'
+  const baseUrl = 'https://www.byodisy.com'
   const imageUrl = baseUrl + found?.pics[0]
   var i = 1
   return (
     <>
-      <BasicLayout title={found?.area + found?.name} project={project} platform={platform} pageDescription={found?.description} imageUrl={imageUrl} currentUrl={currentUrl}>
+      <BasicLayout title={found?.area + ' ' + found?.name} project={project} platform={platform} pageDescription={found?.description} imageUrl={imageUrl} currentUrl={currentUrl}>
         <div className="detail__container center">
           <section className="detail__info center">
             <div className="detail__data animate__animated animate__fadeInLeft">
