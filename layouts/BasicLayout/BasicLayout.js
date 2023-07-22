@@ -12,6 +12,7 @@ export default function BasicLayout({ children, title, project, platform, pageDe
 
 
   useEffect(() => {
+    console.log(title);
     const handleRouteChange = (url) => {
       window.dataLayer = window.dataLayer || [];
       function gtag() { dataLayer.push(arguments) }
